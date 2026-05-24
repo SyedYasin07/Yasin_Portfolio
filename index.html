@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sayed Yasin | Aspiring Full Stack Java Developer Portfolio. B.Tech CSE (8.95 CGPA). Java Servlets, JSP, JDBC, SQL, MVC Architecture & OOPs. Explore projects and internships.">
+    <meta name="keywords" content="Sayed Yasin, Sayed Yasin portfolio, Java Developer, Full Stack Developer, Java Fresher, CSE Student SVCE, Tirupati Developer, Java J2EE">
+    <meta name="author" content="Sayed Yasin">
+    <title>Sayed Yasin | Premium Full Stack Java Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Vector Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Dynamic Top Progress Line -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Active Canvas Nodes Background -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <!-- Custom Trailing Neon Cursors -->
+    <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-outline" id="cursor-outline" aria-hidden="true"></div>
+
+    <!-- Page Loading Animation Overlay -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                
+                <span class="logo-text">YASIN</span>
+            
+            </div>
+            <div class="loader-ring">
+                <div class="loader-inner-ring"></div>
+            </div>
+            <div class="loader-percent" id="loader-percent">0%</div>
+            <div class="loader-status">Launching Developer Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Sticky Blurred Header -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container container">
+            <a href="#home" class="logo" aria-label="Sayed Yasin Home logo link">
+                
+                <span class="logo-text">Yasin.Dev<span class="logo-dot"</span>
+                
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active"><span class="nav-num"></span>Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-num"></span>About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-num"></span>Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link"><span class="nav-num"></span>Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link"><span class="nav-num"></span>Projects</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link"><span class="nav-num"></span>Credentials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-num"></span>Contact</a></li>
+            </ul>
+
+            <!-- Mobile Hamburger Trigger -->
+            <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Toggle Navigation Drawer" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Workspace Section -->
+    <main>
+        
+        <!-- ==========================================
+            HERO SECTION
+             ========================================== -->
+       <section id="home" class="hero-section section-padding">
+
+    <div class="hero-glow-blob blob-cyan"></div>
+    <div class="hero-glow-blob blob-purple"></div>
+
+    <div class="container">
+
+        <!-- TOP AREA -->
+        <div class="hero-top">
+
+            <!-- LEFT CONTENT -->
+            <div class="hero-content reveal-left">
+
+                <div class="hero-badge">
+                    <i class="fa-solid fa-code-commit badge-icon text-cyan"></i>
+                    <span>Aspiring Full Stack Java Architect</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hello-text">Hello, I'm</span>
+                    <span class="name-gradient">SAYED YASIN</span>
+                </h1>
+
+                <div class="title-rotator">
+                    <span class="static-prefix">I am an </span>
+                    <div class="rotating-text">
+        <span>Full Stack Java Developer</span>
+        <span>Frontend UI Designer</span>
+        <span>Backend Engineer</span>
+        <span>Java Problem Solver</span>
+        <span>Aspiring Full Stack Java Developer</span>
+
+                        
+                    </div>
+                </div>
+
+                <p class="hero-description">
+                    Passionate developer skilled in Java, JSP, Servlets,
+                    JDBC, SQL, and modern responsive UI engineering.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch
+                    </a>
+
+                    <a href="my-resume.pdf" target="_blank" class="btn btn-outline">
+        View Resume
+    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/SyedYasin07"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/syed-yasin-296a49348/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/Sayed_yasin/"><i class="fa-solid fa-code"></i></a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="right reveal-right">
+                <div class="image-wrapper">
+                    <img src="right.jpg" alt="right" class="hero-image">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM AREA -->
+        <div class="hero-bottom">
+
+            <!-- STATS -->
+            <div class="stats-grid"> <div class="stat-card"> <div class="stat-num" data-val="10">0</div> <div class="stat-label">Engineering Projects</div> </div> <div class="stat-card"> <div class="stat-num" data-val="2">0</div> <div class="stat-label">Internships Done</div> </div> <div class="stat-card"> <div class="stat-num" data-val="95">0</div> <div class="stat-label">Intermediate %</div> </div> <div class="stat-card"> <div class="stat-num" data-val="9">0</div> <div class="stat-label">B.Tech CGPA</div> </div> </div>
+            <!-- TERMINAL -->
+          <div class="hero-graphics reveal-right"> <div class="code-terminal"> <div class="terminal-header"> <div class="terminal-dots"> <span class="dot red-dot"></span> <span class="dot yellow-dot"></span> <span class="dot green-dot"></span> </div> <div class="terminal-tabs"> <button class="tab-btn active" data-file="servlet"> <i class="fa-brands fa-java text-orange"></i> YasinController.java </button> <button class="tab-btn" data-file="sql"> <i class="fa-solid fa-database text-blue"></i> schema.sql </button> <button class="tab-btn" data-file="js"> <i class="fa-brands fa-js text-yellow"></i> core.js </button> </div> <div class="terminal-action"> <i class="fa-solid fa-circle-play text-green" id="terminal-run" title="Run / Execute Script"></i> </div> </div> <div class="terminal-body font-mono"> <div class="line-numbers"> <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span> </div> <pre class="code-content" id="code-content"></pre> </div> <div class="terminal-status"> <div class="status-left"> <span class="pulse-indicator"></span> System Online </div> <div class="status-right">UTF-8 | JDK 17 | Git (main)</div> </div> </div> </div>
+
+    </div>
+
+</section>
+
+        <!-- ==========================================
+             ABOUT ME SECTION
+             ========================================== -->
+        <section id="about" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title"><span class="section-num">01.</span>Professional Story</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="paragraph-highlight">
+                            “Aspiring Full Stack Java Developer with a strong foundation in programming, software development, and web technologies.”
+                        </p>
+                        <p class="paragraph-normal">
+                            I specialize in building real-time MVC server systems using Java, JSP, Servlets, HTML, CSS, JavaScript, SQL, and MVC architecture. Passionate about engineering clean-coded, scalable applications, solving complex logic bottlenecks, and engaging in continuous professional learning.
+                        </p>
+                        <p class="paragraph-normal">
+                            During my academic journey at Sri Venkateswara College of Engineering, Tirupati, I have systematically translated core programming logic into functional full stack architectures, securing industry internships and developing web portfolios.
+                        </p>
+                        
+                        <div class="about-highlights-list">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-angle-right highlight-icon"></i>
+                                <strong>Java Full Stack Intern:</strong> Phani Soft Tech Solutions (2025)
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-angle-right highlight-icon"></i>
+                                <strong>AI Internship:</strong> Achieve Academy (2024–2025)
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-angle-right highlight-icon"></i>
+                                <strong>High Academic Rank:</strong> SVCE Tirupati CSE CGPA: 8.95
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-angle-right highlight-icon"></i>
+                                <strong>Core Competencies:</strong> Java OOPs, MVC Systems, SQL Datastores, DSA
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="card-outline-gradient"></div>
+                            <div class="card-inner">
+                                <div class="profile-placeholder">
+                                    <!-- <i class="fa-solid fa-user-gear profile-avatar"></i> -->
+                                    <img src="me.jpeg" alt="sy" class="profile-img">
+                                    <div class="pulse-ring ring-1"></div>
+                                    <div class="pulse-ring ring-2"></div>
+                                </div>
+                                <h3 class="profile-name">Sayed Yasin</h3>
+                                <p class="profile-title">Full Stack Java Fresher</p>
+                                <div class="profile-chips">
+                                    <span class="chip-badge">JAVA 8+</span>
+                                    <span class="chip-badge">J2EE</span>
+                                    <span class="chip-badge">SQL</span>
+                                    <span class="chip-badge">MVC</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Tech badges -->
+                            <div class="floating-tech-icon float-icon-1" title="Java Core backend"><i class="fa-brands fa-java text-orange"></i></div>
+                            <div class="floating-tech-icon float-icon-2" title="Relational SQL Datastores"><i class="fa-solid fa-database text-blue"></i></div>
+                            <div class="floating-tech-icon float-icon-3" title="JavaScript interactive engines"><i class="fa-brands fa-js text-yellow"></i></div>
+                            <div class="floating-tech-icon float-icon-4" title="HTML5 Semantic UI"><i class="fa-brands fa-html5 text-red"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SKILLS SECTION
+             ========================================== -->
+        <section id="skills" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Competence Core</span>
+                    <h2 class="section-title"><span class="section-num">02.</span>Professional Toolkit</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Java -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-orange">
+                            <i class="fa-brands fa-java skill-icon text-orange"></i>
+                        </div>
+                        <h3 class="skill-name">Java SE & EE Core</h3>
+                        <p class="skill-desc">OOPs, Collections Framework, Exception Handling, Lambdas, Streams, J2EE patterns.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-java" style="width: 0%;" data-percent="88"></div>
+                        </div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-blue">
+                            <i class="fa-solid fa-database skill-icon text-blue"></i>
+                        </div>
+                        <h3 class="skill-name">SQL Database Engine</h3>
+                        <p class="skill-desc">MySQL queries, database normalization, relational joins, subqueries, indexing schemas.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-sql" style="width: 0%;" data-percent="85"></div>
+                        </div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+
+                    <!-- HTML -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-red">
+                            <i class="fa-brands fa-html5 skill-icon text-red"></i>
+                        </div>
+                        <h3 class="skill-name">HTML5 Structures</h3>
+                        <p class="skill-desc">W3C semantic layout structures, web accessibility contrast, form controls and schemas.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-html" style="width: 0%;" data-percent="85"></div>
+                        </div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-purple">
+                            <i class="fa-brands fa-css3-alt skill-icon text-purple"></i>
+                        </div>
+                        <h3 class="skill-name">CSS3 Styling & Variables</h3>
+                        <p class="skill-desc">Flexbox, responsive layouts, grid systems, custom properties, smooth GPU transitions.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-css" style="width: 0%;" data-percent="83"></div>
+                        </div>
+                        <div class="skill-percent">83%</div>
+                    </div>
+
+                    <!-- JS -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-yellow">
+                            <i class="fa-brands fa-js skill-icon text-yellow"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript ES6+</h3>
+                        <p class="skill-desc">DOM controllers, asynchronous promises, AJAX, state preservation, API integrations.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-js" style="width: 0%;" data-percent="80"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+
+                    <!-- JDBC -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-green">
+                            <i class="fa-solid fa-network-wired skill-icon text-green"></i>
+                        </div>
+                        <h3 class="skill-name">JDBC Connectivity</h3>
+                        <p class="skill-desc">PreparedStatements execution, database connections pooling, ResultSet routing controllers.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-jdbc" style="width: 0%;" data-percent="82"></div>
+                        </div>
+                        <div class="skill-percent">82%</div>
+                    </div>
+
+                    <!-- JSP -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-cyan">
+                            <i class="fa-solid fa-code-branch skill-icon text-cyan"></i>
+                        </div>
+                        <h3 class="skill-name">Java Server Pages (JSP)</h3>
+                        <p class="skill-desc">Directives, tag libraries, expressions, dynamic visual elements presentation layer setups.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-jsp" style="width: 0%;" data-percent="80"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+
+                    <!-- Servlets -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-indigo">
+                            <i class="fa-solid fa-server skill-icon text-indigo"></i>
+                        </div>
+                        <h3 class="skill-name">Java Servlets</h3>
+                        <p class="skill-desc">Servlet routing lifecycle, HTTP request-response handlers, sessions mapping, filtering.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-servlets" style="width: 0%;" data-percent="80"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+
+                    <!-- MVC -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-pink">
+                            <i class="fa-solid fa-diagram-project skill-icon text-pink"></i>
+                        </div>
+                        <h3 class="skill-name">MVC Architecture</h3>
+                        <p class="skill-desc">Modular separation of controller logics, data models, and visual presentation layers.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-mvc" style="width: 0%;" data-percent="78"></div>
+                        </div>
+                        <div class="skill-percent">78%</div>
+                    </div>
+
+                    <!-- OOPs -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-blue">
+                            <i class="fa-solid fa-cubes skill-icon text-blue"></i>
+                        </div>
+                        <h3 class="skill-name">OOPs Paradigm</h3>
+                        <p class="skill-desc">Inheritance, polymorphism, encapsulation, abstraction applied to modular systems design.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-oops" style="width: 0%;" data-percent="85"></div>
+                        </div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+
+                    <!-- Cloud Basics -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-purple">
+                            <i class="fa-solid fa-cloud skill-icon text-purple"></i>
+                        </div>
+                        <h3 class="skill-name">Cloud Basics & AWS</h3>
+                        <p class="skill-desc">AWS cloud fundamentals, EC2 hosts, VPC containers, cloud networking, server distributions.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-cloud" style="width: 0%;" data-percent="72"></div>
+                        </div>
+                        <div class="skill-percent">72%</div>
+                    </div>
+
+                    <!-- DSA -->
+                    <div class="skill-card hover-glow">
+                        <div class="skill-icon-wrap bg-orange">
+                            <i class="fa-solid fa-brain skill-icon text-orange"></i>
+                        </div>
+                        <h3 class="skill-name">DSA & Core Algorithms</h3>
+                        <p class="skill-desc">Arrays logic, linked lists operations, sorting complexities, searching algorithmic flows.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill fill-dsa" style="width: 0%;" data-percent="75"></div>
+                        </div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+
+                </div>
+
+                <!-- Fresher DSA/LeetCode Stats Banner -->
+                <div class="additional-skills">
+                    <h3 class="skills-mini-title"><i class="fa-solid fa-ranking-star text-cyan"></i> Problem Solving Metrics:</h3>
+                    <div class="badges-wrap">
+                        <span class="glow-badge"><i class="fa-solid fa-laptop-code text-orange"></i> LeetCode: 200+ Solved</span>
+                        <span class="glow-badge"><i class="fa-solid fa-square-poll-vertical text-blue"></i> HackerRank: Gold Badge Java</span>
+                        <span class="glow-badge"><i class="fa-brands fa-git-alt text-orange"></i> Git Versioning & CI/CD Pipelines</span>
+                        <span class="glow-badge"><i class="fa-solid fa-circle-check text-green"></i> Verified DSA Logic</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             EDUCATION & TIMELINE SECTION
+             ========================================== -->
+        <section id="experience" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Chronology</span>
+                    <h2 class="section-title"><span class="section-num">04.</span>Education & Career Roadmap</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline-grid">
+                    <!-- Column 1: Internships -->
+                    <div class="timeline-column">
+                        <h3 class="column-header"><i class="fa-solid fa-briefcase col-icon text-purple"></i> Industry Experience & Internships</h3>
+                        <div class="timeline-wrapper">
+                            
+                            <div class="timeline-card hover-glow">
+                                <div class="timeline-dot dot-purple"></div>
+                                <div class="card-timeline-header">
+                                    <span class="timeline-duration">Feb 2025 – Aug 2025</span>
+                                    <span class="timeline-badge purple-badge">Active</span>
+                                </div>
+                                <h4 class="timeline-title">Java Full Stack Development Intern</h4>
+                                <h5 class="timeline-subtitle text-purple">Phani Soft Tech Solutions (PST)</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Built stable, responsive Java web applications utilizing J2EE, MVC and MySQL.</li>
+                                    <li>Implemented request controllers using Java Servlets coupled with dynamic JSP pages.</li>
+                                    <li>Constructed secure databases routing utilizing JDBC PreparedStatements logic.</li>
+                                    <li>Optimized frontend UI modules using vanilla ES6+ custom components.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-card hover-glow">
+                                <div class="timeline-dot dot-purple"></div>
+                                <div class="card-timeline-header">
+                                    <span class="timeline-duration">Oct 2024 – Jan 2025</span>
+                                </div>
+                                <h4 class="timeline-title">Artificial Intelligence Development Intern</h4>
+                                <h5 class="timeline-subtitle text-purple">Achieve Academy</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Learned core AI concepts, automation models, and intelligent workflows architectures.</li>
+                                    <li>Integrated smart script parameters to automate database sorting sequences.</li>
+                                    <li>Completed analysis tasks on predictive regression datasets.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Education -->
+                    <div class="timeline-column">
+                        <h3 class="column-header"><i class="fa-solid fa-graduation-cap col-icon text-cyan"></i> Academic Chronicle</h3>
+                        <div class="timeline-wrapper">
+                            
+                            <div class="timeline-card hover-glow">
+                                <div class="timeline-dot dot-cyan"></div>
+                                <div class="card-timeline-header">
+                                    <span class="timeline-duration">2023 – 2027</span>
+                                    <span class="timeline-badge cyan-badge">Active B.Tech</span>
+                                </div>
+                                <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                                <h5 class="timeline-subtitle text-cyan">Sri Venkateswara College of Engineering, Tirupati</h5>
+                                <p class="timeline-desc">
+                                    Specializing in Software Development, Database Management, Algorithms, Object Oriented Analysis, and Web Architectures.
+                                </p>
+                                <div class="timeline-metric">
+                                    <span class="metric-label">Current Academic Grade:</span>
+                                    <span class="metric-val text-cyan">8.95 CGPA</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-card hover-glow">
+                                <div class="timeline-dot dot-cyan"></div>
+                                <div class="card-timeline-header">
+                                    <span class="timeline-duration">2021 – 2023</span>
+                                </div>
+                                <h4 class="timeline-title">Intermediate (MPC) Board</h4>
+                                <h5 class="timeline-subtitle text-cyan">TMR Junior College</h5>
+                                <p class="timeline-desc">
+                                    Focused on Advanced Mathematics, Physics, and Chemistry. Developed strong logical reasoning competencies.
+                                </p>
+                                <div class="timeline-metric">
+                                    <span class="metric-label">Final Board Percentage:</span>
+                                    <span class="metric-val text-cyan">95% Marks</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PROJECTS SECTION
+             ========================================== -->
+        <section id="projects" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio Showcases</span>
+                    <h2 class="section-title"><span class="section-num">05.</span>Engineering Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Flipkart Clone -->
+                    <article class="project-card tilt-card" data-tilt>
+                        <div class="project-card-border-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-media">
+                                <div class="project-overlay">
+                                    <h4 class="overlay-title">Flipkart Clone</h4>
+                                    <p class="overlay-desc">E-commerce storefront layout integrated with backend JSP controllers and secure SQL user tables.</p>
+                                    <div class="overlay-buttons">
+                                        <a href="https://github.com/SyedYasin07/Flipkart-Clone" target="_blank" rel="noopener noreferrer" class="btn btn-mini btn-primary" aria-label="View source code on GitHub"><i class="fa-brands fa-github"></i> Github</a>
+                                        <button class="btn btn-mini btn-outline preview-project-btn" data-project="flipkart" aria-label="View project modal specifications"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                                    </div>
+                                </div>
+                                <div class="project-thumbnail">
+                                <i class="fa-solid fa-cart-shopping project-placeholder-icon text-cyan"></i>
+                                    <div class="project-badge-tag bg-cyan">Full Stack store</div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Flipkart E-Commerce Clone</h3>
+                                <p class="project-desc">
+                                    A functional clone of Flipkart storefront. Designed connection pooling APIs using JDBC, session state trackers with Servlets, shopping carts controllers, and responsive CSS variables styling dashboards.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">Java SE</span>
+                                    <span class="tech-tag">Servlets</span>
+                                    <span class="tech-tag">JSP Pages</span>
+                                    <span class="tech-tag">MySQL DB</span>
+                                    <span class="tech-tag">MVC pattern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Student SMS System -->
+                    <article class="project-card tilt-card" data-tilt>
+                        <div class="project-card-border-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-media">
+                                <div class="project-overlay">
+                                    <h4 class="overlay-title">Student SMS System</h4>
+                                    <p class="overlay-desc">Institutional CRM allowing school administrators to perform full database CRUD operations.</p>
+                                    <div class="overlay-buttons">
+                                        <a href="https://github.com/SyedYasin07/student-management-system" target="_blank" rel="noopener noreferrer" class="btn btn-mini btn-primary" aria-label="View Student SMS code"><i class="fa-brands fa-github"></i> Github</a>
+                                        <button class="btn btn-mini btn-outline preview-project-btn" data-project="student" aria-label="View Student SMS modal details"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                                    </div>
+                                </div>
+                                <div class="project-thumbnail">
+                                    <i class="fa-solid fa-graduation-cap project-placeholder-icon text-purple"></i>
+                                    <div class="project-badge-tag bg-purple">Database Engine</div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Student Management System</h3>
+                                <p class="project-desc">
+                                    A robust student registry console executing CRUD processes. Uses Java PreparedStatements to secure databases from injections, database mapping loops, and secure logins.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">JDBC Connections</span>
+                                    <span class="tech-tag">PreparedStatements</span>
+                                    <span class="tech-tag">SQL Databases</span>
+                                    <span class="tech-tag">OOP Logic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                
+                    <!-- Netflix OTT Project -->
+<article class="project-card tilt-card" data-tilt>
+    <div class="project-card-border-glow"></div>
+    <div class="project-card-inner">
+        <div class="project-media">
+            <div class="project-overlay">
+                <h4 class="overlay-title">Netflix OTT Platform</h4>
+                <p class="overlay-desc">
+                    Modern OTT streaming interface inspired by Netflix with cinematic intro animations, responsive layouts, and immersive UI experience.
+                </p>
+
+                <div class="overlay-buttons">
+                    <a href="https://github.com/SyedYasin07/OTT-PLATFORM" target="_blank" rel="noopener noreferrer" class="btn btn-mini btn-primary" aria-label="View source code on GitHub">
+                        <i class="fa-brands fa-github"></i> Github
+                    </a>
+
+                    <button class="btn btn-mini btn-outline preview-project-btn" data-project="netflix" aria-label="View Netflix OTT project details">
+                        <i class="fa-solid fa-circle-info"></i> View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-thumbnail">
+                <i class="fa-solid fa-film project-placeholder-icon text-red"></i>
+                <div class="project-badge-tag bg-red">OTT Platform</div>
+            </div>
+        </div>
+
+        <div class="project-details">
+            <h3 class="project-title">Netflix Inspired Streaming App</h3>
+
+            <p class="project-desc">
+                A cinematic OTT web application featuring animated intro screens, responsive movie sections, interactive hover effects, and scalable frontend architecture for future streaming features.
+            </p>
+
+            <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive UI</span>
+            </div>
+        </div>
+    </div>
+</article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             CERTIFICATIONS SECTION
+             ========================================== -->
+        <section id="certifications" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title"><span class="section-num">06.</span>Verified Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    
+                    <div class="cert-card hover-glow">
+                        <div class="cert-badge-ribbon"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-icon-box text-orange"><i class="fa-brands fa-java"></i></div>
+                        <h3 class="cert-title">Java Full Stack Development</h3>
+                        <p class="cert-org">Phani Soft Tech Solutions (PST)</p>
+                        <div class="cert-footer">
+                            <span class="cert-status"><i class="fa-regular fa-circle-check text-green"></i> Verified Skill</span>
+                            <span class="cert-code">PST-JFS-2025</span>
+                        </div>
+                            <a href="Pst Completion certificate.jpeg"
+                                target="_blank"
+                                class="cert-view-btn">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                                    View Certificate
+                                                                </a>
+                    </div>
+
+                    <div class="cert-card hover-glow">
+                        <div class="cert-badge-ribbon"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-icon-box text-blue"><i class="fa-brands fa-aws"></i></div>
+                        <h3 class="cert-title">AWS Technical Training</h3>
+                        <p class="cert-org">Viksha Tech Solutions</p>
+                        <div class="cert-footer">
+                            <span class="cert-status"><i class="fa-regular fa-circle-check text-green"></i> Verified Cloud</span>
+                            <span class="cert-code">AWS-VTS-2024</span>
+                        </div>
+                        <a href="Aw.pdf"
+                                target="_blank"
+                                class="cert-view-btn">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                                    View Certificate
+                                                                </a>
+                    </div>
+                    
+
+                    <div class="cert-card hover-glow">
+                        <div class="cert-badge-ribbon"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-icon-box text-green"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="cert-title">Java 8 Lambda Specifications</h3>
+                        <p class="cert-org">Phani Soft Tech Solutions (PST)</p>
+                        <div class="cert-footer">
+                            <span class="cert-status"><i class="fa-regular fa-circle-check text-green"></i> Verified Workshop</span>
+                            <span class="cert-code">PST-J8W-2024</span>
+                        </div>
+                        <a href="java-8.jpeg"
+                                target="_blank"
+                                class="cert-view-btn">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                                    View Certificate
+                                                                </a>
+                    </div>
+
+                    <div class="cert-card hover-glow">
+                        <div class="cert-badge-ribbon"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-icon-box text-purple"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="cert-title">Artificial Intelligence Internship</h3>
+                        <p class="cert-org">Achieve Academy</p>
+                        <div class="cert-footer">
+                            <span class="cert-status"><i class="fa-regular fa-circle-check text-green"></i> Verified Intern</span>
+                            <span class="cert-code">AA-AI-2025</span>
+                        </div>
+                        <a href="achieve academy.pdf"
+                                target="_blank"
+                                class="cert-view-btn">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                                    View Certificate
+                                                                </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             CONTACT SECTION
+             ========================================== -->
+        <section id="contact" class="section section-padding reveal-fade">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Connect Pipe</span>
+                    <h2 class="section-title"><span class="section-num">07.</span>Establish Connections</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Left: direct carrier cards -->
+                    <div class="contact-info">
+                        <h3 class="info-title">Let's craft scalable backends together</h3>
+                        <p class="info-description">
+                            I am actively seeking placement pipelines, entry-level Full Stack Java development roles, and academic collaborations. Send in a voice carrier call or fill in the secure SMTP transmission panel.
+                        </p>
+
+                        <div class="info-cards-stack">
+                            
+                            <div class="info-link-card hover-glow">
+                                <div class="info-icon bg-cyan">
+                                    <i class="fa-regular fa-envelope text-cyan"></i>
+                                </div>
+                                <div class="info-text-wrap">
+                                    <span class="info-label">Direct Inbox SMTP</span>
+                                    <a href="mailto:syedyasin075@gmail.com" class="info-value">syedyasin075@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-link-card hover-glow">
+                                <div class="info-icon bg-purple">
+                                    <i class="fa-solid fa-phone-volume text-purple"></i>
+                                </div>
+                                <div class="info-text-wrap">
+                                    <span class="info-label">Mobile Telephony Carrier</span>
+                                    <a href="tel:6303834758" class="info-value">+91 6303834758</a>
+                                </div>
+                            </div>
+
+                            <div class="info-link-card hover-glow">
+                                <div class="info-icon bg-blue">
+                                    <i class="fa-solid fa-map-location-dot text-blue"></i>
+                                </div>
+                                <div class="info-text-wrap">
+                                    <span class="info-label">Mailing Location</span>
+                                    <span class="info-value">Naidupeta, Tirupati District, AP</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Contact Right: SMTP Form panel -->
+                    <div class="contact-form-wrap">
+                        <form id="portfolio-contact-form" class="glass-form">
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <input type="text" id="user-name" name="name" required placeholder=" " aria-label="Enter your name">
+                                    <label for="user-name">Your Full Name</label>
+                                    <span class="focus-line"></span>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="email" id="user-email" name="email" required placeholder=" " aria-label="Enter your email">
+                                    <label for="user-email">Return Email Address</label>
+                                    <span class="focus-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="text" id="msg-subject" name="subject" required placeholder=" " aria-label="Enter subject header">
+                                <label for="msg-subject">Message Subject</label>
+                                <span class="focus-line"></span>
+                            </div>
+
+                            <div class="input-wrap text-area-wrap">
+                                <textarea id="msg-body" name="message" required placeholder=" " aria-label="Enter message content"></textarea>
+                                <label for="msg-body">Your message content goes here...</label>
+                                <span class="focus-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn" aria-label="Transmit payload direct">
+                                <span id="submit-btn-text">Transmit Payload</span>
+                                <i class="fa-solid fa-paper-plane text-glow" id="submit-btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project dynamic quick-view modaler overlays -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close detailed dialog modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body-content" id="modal-body-content">
+                <!-- Javascript populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Printable Resume interactive Modal -->
+    <div class="modal-overlay" id="resume-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card resume-modal-card">
+            <button class="modal-close-btn" id="resume-modal-close" aria-label="Close resume profile"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-resume-body">
+                <div class="resume-logo-header">
+                    <h3>SAYED YASIN</h3>
+                    <p>Computer Science Engineer & Full Stack Developer Profile</p>
+                </div>
+                <div class="resume-content-layout">
+                    <div class="resume-left-col">
+                        <h4>Contact info</h4>
+                        <p><i class="fa-solid fa-phone"></i> +91 6303834758</p>
+                        <p><i class="fa-solid fa-envelope"></i> syedyasin075@gmail.com</p>
+                        <p><i class="fa-solid fa-location-crosshairs"></i> Naidupeta, Tirupati District</p>
+                        
+                        <h4>Skills Toolkit</h4>
+                        <div class="resume-skills-tags">
+                            <span>Java 8+</span><span>SQL</span><span>JDBC</span><span>Servlets</span>
+                            <span>JSP</span><span>MVC</span><span>HTML/CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="resume-right-col">
+                        <h4>Professional Profile</h4>
+                        <p class="resume-paragraph">Aspiring Full Stack Java Developer with strong software engineering concepts. Skilled in database logic, servlet request flows, and responsive frontend systems.</p>
+                        
+                        <h4>Education Chronology</h4>
+                        <p><strong>B.Tech CSE:</strong> Sri Venkateswara College of Engineering, Tirupati (2023–2027) - <strong>8.95 CGPA</strong></p>
+                        <p><strong>Intermediate (MPC):</strong> TMR Junior College (2021–2023) - <strong>95% Marks</strong></p>
+                        
+                        <h4>Key Internships</h4>
+                        <p><strong>Java Full Stack Intern:</strong> Phani Soft Tech Solutions (Feb 2025 – Aug 2025)</p>
+                        <p><strong>AI Intern:</strong> Achieve Academy (Oct 2024 – Jan 2025)</p>
+                    </div>
+                </div>
+                <div class="resume-action-footer">
+                    <button class="btn btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save PDF Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Back to Top control button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll page back to top" aria-hidden="true">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <!-- Footer Area -->
+    <footer class="footer-wrap">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        
+                        <span class="logo-text">Yasin<span class="logo-dot">.dev</span></span>
+                    
+                    </a>
+                    <p class="footer-tagline">Architecting robust Java backends, querying secure relational SQL tables, styling futuristic interfaces.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Map Coordinates</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right list-arrow"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right list-arrow"></i> About Story</a></li>
+                        <li><a href="#skills"><i class="fa-solid fa-chevron-right list-arrow"></i> Skill Toolkit</a></li>
+                        <li><a href="#experience"><i class="fa-solid fa-chevron-right list-arrow"></i> Timeline</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Showcases Map</h4>
+                    <ul class="footer-links">
+                        <li><a href="#projects"><i class="fa-solid fa-chevron-right list-arrow"></i> Creations Grid</a></li>
+                        <li><a href="#certifications"><i class="fa-solid fa-chevron-right list-arrow"></i> Credentials</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right list-arrow"></i> Connect Pipe</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="footer-divider" aria-hidden="true"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Sayed Yasin. Engineered with pure HTML, CSS, and JS parameters. All rights reserved.
+                </p>
+                <div class="footer-social-links">
+                    <a href="https://github.com/SyedYasin07" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile Pipe"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/syed-yasin-296a49348/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Professional Network Pipe"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Core Scripts Logic -->
+    <script src="script.js"></script>
+</body>
+</html>

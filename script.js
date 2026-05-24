@@ -485,41 +485,120 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* --------------------------------------------------------------------------
-       12. SMTP FORM SUBMIT VERIFICATION RESPONSE
-       -------------------------------------------------------------------------- */
-    const contactForm = document.getElementById('portfolio-contact-form');
-    const submitBtnText = document.getElementById('submit-btn-text');
-    const submitBtnIcon = document.getElementById('submit-btn-icon');
+    // /* --------------------------------------------------------------------------
+    //    12. SMTP FORM SUBMIT VERIFICATION RESPONSE
+    //    -------------------------------------------------------------------------- */
+    // const contactForm = document.getElementById('portfolio-contact-form');
+    // const submitBtnText = document.getElementById('submit-btn-text');
+    // const submitBtnIcon = document.getElementById('submit-btn-icon');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', (e) => {
+    //         e.preventDefault();
             
-            // Lock form controls
-            if (submitBtnText && submitBtnIcon) {
-                submitBtnText.textContent = "TRANSMITTING DATA PACKET...";
-                submitBtnIcon.className = "fa-solid fa-spinner fa-spin text-glow";
-                contactForm.style.pointerEvents = "none";
+    //         // Lock form controls
+    //         if (submitBtnText && submitBtnIcon) {
+    //             submitBtnText.textContent = "TRANSMITTING DATA PACKET...";
+    //             submitBtnIcon.className = "fa-solid fa-spinner fa-spin text-glow";
+    //             contactForm.style.pointerEvents = "none";
                 
-                setTimeout(() => {
-                    // Success callback
-                    submitBtnText.textContent = "SMTP CONNECTION ESTABLISHED! TRANSMITTED.";
-                    submitBtnIcon.className = "fa-solid fa-circle-check text-glow";
-                    submitBtnIcon.style.color = "#22c55e";
+    //             setTimeout(() => {
+    //                 // Success callback
+    //                 submitBtnText.textContent = "SMTP CONNECTION ESTABLISHED! TRANSMITTED.";
+    //                 submitBtnIcon.className = "fa-solid fa-circle-check text-glow";
+    //                 submitBtnIcon.style.color = "#22c55e";
                     
-                    contactForm.reset();
+    //                 contactForm.reset();
                     
-                    setTimeout(() => {
-                        submitBtnText.textContent = "Transmit Payload";
-                        submitBtnIcon.className = "fa-solid fa-paper-plane text-glow";
-                        submitBtnIcon.style.color = "";
-                        contactForm.style.pointerEvents = "auto";
-                    }, 3500);
-                }, 1800);
-            }
-        });
-    }
+    //                 setTimeout(() => {
+    //                     submitBtnText.textContent = "Transmit Payload";
+    //                     submitBtnIcon.className = "fa-solid fa-paper-plane text-glow";
+    //                     submitBtnIcon.style.color = "";
+    //                     contactForm.style.pointerEvents = "auto";
+    //                 }, 3500);
+    //             }, 1800);
+    //         }
+    //     });
+    // }
+                  // Initialize EmailJS
+emailjs.init("BN37ET1cRrGtQ3MTV");
+
+
+// Select Form
+const form = document.getElementById("portfolio-contact-form");
+
+
+// Select Button Elements
+const submitBtnText = document.getElementById("submit-btn-text");
+
+const submitBtnIcon = document.getElementById("submit-btn-icon");
+
+
+// Form Submit Event
+form.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    // Loading State
+    submitBtnText.innerText = "Transmitting...";
+
+    submitBtnIcon.classList.remove("fa-paper-plane");
+
+    submitBtnIcon.classList.add("fa-spinner", "fa-spin");
+
+
+    // Send Email
+    emailjs.sendForm(
+        "service_zckjzv4",
+        "template_dbvd9wn",
+        "#portfolio-contact-form"
+    )
+
+    .then(() => {
+
+        // Success State
+        submitBtnText.innerText = "Payload Delivered!";
+
+        submitBtnIcon.classList.remove("fa-spinner", "fa-spin");
+
+        submitBtnIcon.classList.add("fa-check");
+
+
+        alert("Message sent successfully!");
+
+        form.reset();
+
+
+        setTimeout(() => {
+
+            submitBtnText.innerText = "Transmit Payload";
+
+            submitBtnIcon.classList.remove("fa-check");
+
+            submitBtnIcon.classList.add("fa-paper-plane");
+
+        }, 3000);
+
+    })
+
+    .catch((error) => {
+
+        console.log(error);
+
+        // Error State
+        submitBtnText.innerText = "Transmission Failed";
+
+        submitBtnIcon.classList.remove("fa-spinner", "fa-spin");
+
+        submitBtnIcon.classList.add("fa-xmark");
+
+
+        alert("Failed to send message!");
+
+    });
+
+});
+
 
     /* --------------------------------------------------------------------------
        13. DYNAMIC PROJECT DETAIL MODALS

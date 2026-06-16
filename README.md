@@ -105,7 +105,7 @@ Libraries & APIs
 # 📸 Portfolio Preview
 
 ## 🏠 Home Section
-![Home](./Home.png)
+![Home](.pics/Home.png)
 
 🔗 Live Preview:
 https://syedyasin07.github.io/Yasin_Portfolio/

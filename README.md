@@ -113,7 +113,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/
 ---
 
 ## 👨‍💻 About Section
-![About](./About.png)
+![About](pics/About.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#about
@@ -121,7 +121,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/#about
 ---
 
 ## 🧠 Skills Section
-![Skills](./skills.png)
+![Skills](pics/skills.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#skills
@@ -129,7 +129,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/#skills
 ---
 
 ## 💼 Experience Section
-![Experience](./experience.png)
+![Experience](pics/experience.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#experience
@@ -137,7 +137,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/#experience
 ---
 
 ## 🚀 Projects Section
-![Projects](./projects.png)
+![Projects](pics/projects.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#projects
@@ -145,7 +145,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/#projects
 ---
 
 ## 🏆 Achievements & Certifications
-![Achievements](./Achievements.png)
+![Achievements](pics/Achievements.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#certifications
@@ -153,7 +153,7 @@ https://syedyasin07.github.io/Yasin_Portfolio/#certifications
 ---
 
 ## 📬 Contact Section
-![Contact](./contact.png)
+![Contact](pics/contact.png)
 
 🔗 Direct Section:
 https://syedyasin07.github.io/Yasin_Portfolio/#contact

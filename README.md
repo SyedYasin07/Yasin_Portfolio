@@ -1,7 +1,7 @@
 🚀 Syed Yasin Portfolio Website
 
 <p align="center">
-  <img src="Home.png" alt="Portfolio Banner" width="100%">
+  <img src="pics/Home.png" alt="Portfolio Banner" width="100%">
 </p><p align="center">
   <strong>Premium Full Stack Java Developer Portfolio</strong><br>
   Showcasing skills, projects, internships, certifications, and professional journey.

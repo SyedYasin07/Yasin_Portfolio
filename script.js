@@ -609,6 +609,26 @@ form.addEventListener("submit", function (e) {
     const projectTriggers = document.querySelectorAll('.preview-project-btn');
 
     const projectData = {
+
+         paysphere: {
+        badge: "Digital Wallet System",
+        title: "PaySphere P2P Digital Wallet",
+        description: "A secure full-stack P2P digital wallet application designed for registered users to manage wallet balances and transfer funds within the PaySphere platform. The system provides JWT-based authentication, role-based authorization, wallet operations, QR-based recipient identification, and transaction tracking. The Spring Boot backend exposes protected REST APIs for user, wallet, and transaction workflows, while the React.js frontend provides dedicated user and administrator interfaces.",
+        tech: [
+            "Java 21",
+            "Spring Boot",
+            "Spring Security",
+            "JWT",
+            "JPA / Hibernate",
+            "React.js",
+            "Tailwind CSS",
+            "MySQL / TiDB",
+            "REST APIs",
+            "Postman"
+        ],
+        source: "https://github.com/SyedYasin07/PaySphere",
+        liveDemo: "https://paysphere-1.onrender.com/"
+    },
         flipkart: {
             badge: "E-Commerce System",
             title: "Flipkart Full Stack Application",
